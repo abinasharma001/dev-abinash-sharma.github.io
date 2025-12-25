@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Abinash Sharma, portfolio, Abinash, AR/VR dev, personal portfolio abinash, portfolio design, Abinash sharma portfolio, personal portfolio" />
+  <meta name="description" content="Welcome to Abinash's Portfolio. Python Developer and Xtended Reality Developer" />
+  <!-- Custom CSS -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link id="favicon" rel="icon" type="image/png" href="./assets/Tababhi-DhQ-9upT.webp">
+  <title>Abinash Sharma | Software Developer Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.3.11/bundled/lenis.min.js"></script>
+  <script type="module" crossorigin src="./assets/main-DPHHwEYh.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C_yYovMB.css">
+</head>
+
+<body oncontextmenu="return false">
+  <!-- Scroll Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <!-- Loader -->
+  <!-- Loader -->
+  <div class="loader">
+    <lottie-player id="rocket" src="./assets/images/loader.json" background="transparent" speed="1"
+      style="width:300px; height:300px;" loop autoplay>
+    </lottie-player>
+  </div>
+
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo">
+      <img src="./assets/circleabhi-CsDY8YWV.webp" alt="Logo" style="height: 54px; vertical-align: middle;">
+      Abinash
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active hoverable" href="#home">Home</a></li>
+        <li><a class="hoverable" href="#about">About</a></li>
+        <li><a class="hoverable" href="#skills">Skills</a></li>
+        <li><a class="hoverable" href="#education">Education</a></li>
+        <li><a class="hoverable" href="#work">Work</a></li>
+        <li><a class="hoverable" href="#experience">Experience</a></li>
+        <li><a class="hoverable" href="#certification">Certification</a></li>
+        <li><a class="hoverable" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 🌗 Dark Mode Toggle -->
+    <div class="dark_mode">
+      <label class="theme-switch">
+        <input type="checkbox" id="darkmode-toggle">
+        <div class="track">
+          <div class="thumb">
+            <div class="sun"></div>
+            <div class="moon"></div>
+          </div>
+          <div class="clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+          <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+        </div>
+      </label>
+      <!-- 🎵 Music Toggle Button -->
+      <!-- 🎵 Music Button (Spotify Style) -->
+      <div class="music-btn" onclick="toggleMusic(this)">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <audio id="bgMusic" src="./assets/images/virus.mp3" loop></audio>
+  </header>
+  <!-- navbar ends -->
+
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="content">
+      <h2>Hi There,<br /> I'm Abinash <span>Sharma</span></h2>
+      <p>i am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn hoverable">
+        <span>About <span class="gradient-text">Me</span></span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin hoverable" aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/contactabinashsharma/" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a class="github hoverable" aria-label="GitHub" href="https://github.com/abinasharma001"
+              target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter hoverable" aria-label="Twitter" href="https://twitter.com/Abinash34813061"
+              target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="Youtube hoverable" aria-label="Youtube"
+              href="https://youtube.com/@explore_with_abinash?si=DXWoyISG8YySrKUT" target="_blank"><i
+                class="fab fa-youtube"></i></a></li>
+          <li><a class="instagram hoverable" aria-label="Instagram" href="https://instagram.com/abinash_sharma___/"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="Email hoverable" aria-label="Email"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=abinasharma001@gmail.com" target="_blank"><i
+                class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right side: New Spline container -->
+    <!-- Right side: New Spline container -->
+
+    <div class="spline-container">
+      <canvas id="canvas3d"></canvas>
+    </div>
+    </div>
+  </section>
+  <!-- hero section ends -->
+  <!-- Globe section starts -->
+
+  <section class="globe" id="globe" style="position: relative; z-index: 2;">
+    <h2 class="heading"><i class="fas fa-globe"></i> My <span>World</span></h2>
+
+    <div class="globe-section">
+      <!-- 🌟 LEFT: This is Me Card -->
+      <div class="info-card left-card">
+        <div class="thisisme-card">
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+          <div class="sparkle"></div>
+
+          <div class="glow"></div>
+
+          <div class="text-container">
+            <p class="text">This is me!</p>
+          </div>
+
+          <div class="arrow">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20 Q 40 40, 45 60 T 50 85" stroke="#2c2c2c" stroke-width="3" fill="none"
+                stroke-linecap="round" />
+              <path d="M50 85 L45 75 M50 85 L55 77" stroke="#2c2c2c" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <div class="image-container">
+            <img src="./assets/yourphoto-wwo3WHW5.webp" alt="Profile" class="profile-image">
+          </div>
+        </div>
+      </div>
+      <!-- 🌍 CENTER: 3D Globe -->
+      <!-- 🌍 CENTER: 3D Globe (REACT - UPDATED) -->
+      <div class="globe-container">
+        <!-- React Globe Mount Point -->
+        <div id="react-globe-root"></div>
+      </div>
+      <!-- 🔗 RIGHT: Social Card -->
+      <div class="info-card right-card">
+        <div class="social-card">
+          <h1>Find Me Here</h1>
+          <div class="grid">
+            <a href="https://github.com/abinasharma001" target="_blank" class="social-box" title="GitHub">
+              <svg class="github-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+
+            <a href="https://instagram.com/abinash_sharma___" target="_blank" class="social-box" title="Instagram">
+              <svg class="instagram-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+
+            <a href="https://linkedin.com/in/contactabinashsharma/" target="_blank" class="social-box" title="LinkedIn">
+              <svg class="linkedin-icon" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+
+            <a href="https://youtube.com/@explore_with_abinash" target="_blank" class="social-box" title="YouTube">
+              <svg class="youtube-icon" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Globe section ends -->
+
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <!--  Lottie Background -->
+    <lottie-player src="./assets/images/Background.json" background="transparent" speed="1" loop autoplay
+      class="bg-lottie">
+    </lottie-player>
+
+
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/imgside-ChdK3FCG.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Abinash</h3>
+        <span class="tag">Software Developer</span>
+
+        <p>I am a Software Developer based in Odisha, India.
+          I am very passionate about improving my coding skills & developing applications.
+          I thrive on collaboration, challenges, and creating impactful tech solutions.
+          I'm driven by a love for learning and innovation.
+          My interests span AI, cloud computing,AR/VR and software engineering. By staying updated on emerging trends
+          and leveraging cutting-edge tools.
+          Let’s connect and innovate to shape the future of technology together! </p>
+
+        <div class="box-container">
+          <div class="box">
+            <p><span> email : </span> abinasharma001@gmail.com</p>
+            <p><span> place : </span> Odisha, India - 766001</p>
+          </div>
+        </div>
+
+        <div class="resumebtn hoverable">
+          <a href="https://drive.google.com/file/d/14h_14sAjZOkgWNwES8bsNzqe0K8P9X7f/view?usp=drivesdk" target="_blank"
+            class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+
+
+        <!-- Random Quote Section -->
+        <div class="quote" style="margin-top: 20px; text-align: center;">
+          <img id="quote-img" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"
+            alt="Random Quote" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- skills section starts -->
+  <section class="tech-stack-section" id="skills">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <h2 class="section-title">
+      <span class="tech">Tech</span> <span class="stack">Stack</span>
+    </h2>
+
+    <!-- First Row -->
+    <div class="slider-container">
+      <div class="slider-track" id="track1">
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#1e1e1e; border-radius:14px;">
+            <!-- API icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="60" height="60" aria-hidden="true">
+              <circle cx="12" cy="32" r="5" fill="#4A90E2" />
+              <circle cx="52" cy="32" r="5" fill="#4A90E2" />
+              <circle cx="32" cy="12" r="5" fill="#4A90E2" />
+              <circle cx="32" cy="52" r="5" fill="#4A90E2" />
+              <path fill="none" stroke="#4A90E2" stroke-width="3" stroke-linecap="round"
+                d="M12 32L32 12L52 32L32 52Z" />
+              <text x="22" y="37" font-family="Arial, sans-serif" font-size="10" fill="#ffffff"
+                font-weight="700">API</text>
+            </svg>
+          </div>
+          <div class="tech-name">API</div>
+        </div>
+
+
+
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#0f0b10; border-radius:14px;">
+            <!-- Official Google "G" logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="60" height="60" aria-hidden="true">
+              <path fill="#EA4335"
+                d="M24 9.5c3.5 0 6.3 1.2 8.2 2.9l6.1-6.1C34.4 3.5 29.6 2 24 2 14.8 2 6.9 7.7 3.2 15.5l7.1 5.5C11.8 13.6 17.3 9.5 24 9.5z" />
+              <path fill="#34A853"
+                d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.8-2 5.1-4.3 6.7l6.6 5.1c3.9-3.6 6.4-8.9 6.4-16.3z" />
+              <path fill="#4A90E2"
+                d="M10.3 28.1a14.4 14.4 0 0 1-.7-4.6c0-1.6.3-3.1.7-4.6l-7.1-5.5C2.4 16.6 2 20.2 2 23.5s.4 6.9 1.2 10.1l7.1-5.5z" />
+              <path fill="#FBBC05"
+                d="M24 46c5.6 0 10.3-1.8 13.7-5l-6.6-5.1c-1.8 1.2-4 1.9-7.1 1.9-6.7 0-12.2-4.1-14.4-9.8l-7.1 5.5C6.9 40.3 14.8 46 24 46z" />
+            </svg>
+          </div>
+          <div class="tech-name">Google Cloud</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#F05032">
+              <path
+                d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+            </svg>
+          </div>
+          <div class="tech-name">Git</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background: #181717; border-radius: 50%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96" width="60" height="60" fill="#ffffff"
+              aria-hidden="true">
+              <path d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69
+           2.427.49 3.316-1.058 3.316-2.362 0-1.162-.043-4.244-.067-8.33-13.59
+           2.957-16.457-6.56-16.457-6.56-2.207-5.61-5.387-7.104-5.387-7.104
+           -4.405-3.013.334-2.953.334-2.953 4.873.342 7.437 5.032 7.437 5.032
+           4.332 7.52 11.367 5.354 14.144 4.095.436-3.168 1.697-5.355 3.09-6.586
+           -10.849-1.242-22.243-5.447-22.243-24.2 0-5.35 1.908-9.72 5.034-13.14
+           -.503-1.243-2.183-6.27.477-13.07 0 0 4.108-1.317 13.458 5.026a46.93
+           46.93 0 0 1 12.26-1.656c4.155.02 8.348.563 12.26 1.656
+           9.35-6.343 13.458-5.026 13.458-5.026 2.66 6.8.98 11.827.477 13.07
+           3.126 3.42 5.033 7.79 5.033 13.14 0 18.788-11.42 22.933-22.293
+           24.153 1.747 1.513 3.296 4.48 3.296 9.03 0 6.52-.06 11.78-.06 13.39
+           0 1.31.87 2.86 3.34 2.37 19.41-6.52 33.39-24.94 33.39-46.69
+           C97.708 22 75.869 0 48.854 0z" />
+            </svg>
+          </div>
+          <div class="tech-name">GitHub</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#1E1E1E; border-radius:14px;">
+            <!-- VS Code official logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="60" height="60" aria-hidden="true">
+              <path fill="#0065A9" d="M0 93.6v68.8l56 28.8 36.8-36.8L56 128l36.8-26.4L0 93.6z" />
+              <path fill="#007ACC" d="M192 32l-56 20.8-99.2 75.2L56 128l-19.2 12 99.2 75.2L192 236l64-44V68L192 32z" />
+              <path fill="#1F9CF0" d="M248 68v120l-56 40V28l56 40z" />
+            </svg>
+          </div>
+          <div class="tech-name">VS Code</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#ffffff">
+              <path d="M12 3l10 18H2z" />
+            </svg>
+          </div>
+          <div class="tech-name">Vercel</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#000000; border-radius:14px;">
+            <!-- Official Unity mark -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="60" height="60" aria-hidden="true">
+              <path fill="#FFFFFF"
+                d="M64 8L98 28v36l-34 20-34-20V28L64 8zm0 10L42 30v28l22 13 22-13V30L64 18zm0 38l-12-7v-9l12-7 12 7v9l-12 7z" />
+            </svg>
+          </div>
+          <div class="tech-name">Unity</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#8A2BE2">
+              <path
+                d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4l-2 3h-4l-2-3H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v8h4l2 3h4l2-3h4V8H4zm2 2h3v4H6v-4zm10 0h3v4h-3v-4z" />
+            </svg>
+          </div>
+          <div class="tech-name">AR / VR</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" aria-hidden="true">
+            <!-- Illustrator-like Ai badge -->
+            <svg viewBox="0 0 64 64" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="64" rx="8" fill="#FF9A00" />
+              <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700"
+                font-size="28" fill="#fff">Ai</text>
+            </svg>
+          </div>
+          <div class="tech-name">AI</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row (Reverse Direction) -->
+    <div class="slider-container">
+      <div class="slider-track-2" id="track2">
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#FF6F00">
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+            </svg>
+          </div>
+          <div class="tech-name">HTML5</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" aria-hidden="true">
+            <!-- CSS3 shield -->
+            <svg viewBox="0 0 512 512" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#1572B6" d="M71 460L30 0h452l-41 460L256 512" />
+              <path fill="#33A9DC" d="M256 472l166-45 35-393H256" />
+              <path fill="#fff" d="M163 163h186l-13 146-86 36-86-36-10-146z" />
+            </svg>
+          </div>
+          <div class="tech-name">CSS3</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#F7DF1E">
+              <rect width="24" height="24" fill="#F7DF1E" rx="3" />
+              <text x="12" y="17" font-size="12" text-anchor="middle" fill="#000" font-weight="bold">JS</text>
+            </svg>
+          </div>
+          <div class="tech-name">Javascript</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#283593; border-radius:14px;">
+            <!-- C language logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="60" height="60" aria-hidden="true">
+              <path fill="#00599C" d="M64 8L8 36v56l56 28 56-28V36L64 8z" />
+              <path fill="#004482" d="M64 8v112l56-28V36L64 8z" />
+              <path fill="#659AD2"
+                d="M64 36c15.5 0 28 12.5 28 28s-12.5 28-28 28c-9.6 0-18.1-4.8-23.2-12.1l11.9-6.9a16 16 0 1 0 0-18l-11.9-6.9C45.9 40.8 54.4 36 64 36z" />
+              <text x="50%" y="56%" text-anchor="middle" fill="#FFFFFF" font-size="36" font-family="Arial, sans-serif"
+                font-weight="700">C</text>
+            </svg>
+          </div>
+          <div class="tech-name">C</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#4B8BBE">
+              <path
+                d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.936 3C7.362 3 7.647 4.983 7.647 4.983l.006 2.055h4.363v.617H5.92s-2.927-.332-2.927 4.282 2.555 4.45 2.555 4.45h1.524v-2.141s-.083-2.554 2.513-2.554zm-.056-5.74a.784.784 0 1 1 0-1.57.784.784 0 1 1 0 1.57z" />
+              <path
+                d="M18.452 7.532h-1.524v2.141s.083 2.554-2.513 2.554h-4.328s-2.432-.04-2.432 2.35v3.951s-.369 2.391 4.409 2.391c4.573 0 4.288-1.983 4.288-1.983l-.006-2.054h-4.363v-.617h6.097s2.927.332 2.927-4.282-2.555-4.451-2.555-4.451zm-3.981 10.436a.784.784 0 1 1 0 1.57.784.784 0 1 1 0-1.57z" />
+            </svg>
+          </div>
+          <div class="tech-name">Python</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#47A248">
+              <path
+                d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" />
+            </svg>
+          </div>
+          <div class="tech-name">MongoDB</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#EE4C2C">
+              <path
+                d="M12.005 0L4.952 7.05l2.005 2.005 5.053-5.053 5.053 5.053 2.005-2.005zm0 24l7.053-7.05-2.005-2.005-5.053 5.053-5.053-5.053-2.005 2.005zm-7.05-11.995L0 7.05l2.005-2.005 4.95 4.95v4.11l-2.005 2.005zm14.1 0l4.95 4.95-2.005 2.005-4.95-4.95v-4.11l2.005-2.005z" />
+            </svg>
+          </div>
+          <div class="tech-name">PyTorch</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon">
+            <svg viewBox="0 0 24 24" width="60" height="60" fill="#150458">
+              <path
+                d="M16.922 11.76a.975.975 0 0 0-.974.974v.716h-2.033V7.618A5.618 5.618 0 0 0 8.297 2H1.945v20h6.352a5.618 5.618 0 0 0 5.618-5.618v-3.646h2.033v.715a.975.975 0 0 0 1.949 0v-.715h2.154a.975.975 0 0 0 0-1.949h-2.154v-.716a.975.975 0 0 0-.975-.974zm-8.625 7.292H3.894V3.949h4.403a3.668 3.668 0 0 1 3.669 3.669v7.764a3.668 3.668 0 0 1-3.669 3.67z" />
+            </svg>
+          </div>
+          <div class="tech-name">Pandas</div>
+        </div>
+
+        <div class="tech-item">
+          <div class="tech-icon" style="background:#C74634; border-radius:14px;">
+            <!-- Official Oracle Cloud mark -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="60" height="60" aria-hidden="true">
+              <!-- White Oracle Cloud "ring" -->
+              <path fill="#FFFFFF"
+                d="M32 14c-9.94 0-18 5.37-18 12s8.06 12 18 12 18-5.37 18-12S41.94 14 32 14zm0 20c-7.73 0-14-3.59-14-8s6.27-8 14-8 14 3.59 14 8-6.27 8-14 8z" />
+            </svg>
+          </div>
+          <div class="tech-name">Oracle Cloud</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skills section ends -->
+
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+
+    <h1 class="heading">
+      <i class="fas fa-graduation-cap"></i>
+      <span class="white-text">My</span> <span>Education</span>
+    </h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/mscbu.webp" alt="">
+        </div>
+        <div class="content">
+          <h3>Master Of Computer Application</h3>
+          <p> Maharaja Sriram Chandra Bhanja Deo University (MSCB University)</p>
+          <h4>2023-2025 | Completed</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/sambalpur.webp" alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelor Of Computer Application</h3>
+          <p> Sambalpur University</p>
+          <h4>2019-2022 | Completed</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/kalahandi.webp" alt="">
+        </div>
+        <div class="content">
+          <h3>Secondary Education</h3>
+          <p>CHSE(Kalahandi University)</p>
+          <h4>2017-2019 | Completed</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- education section ends -->
+
+
+  <!-- work project section starts -->
+  <section class="work" id="work">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container">
+
+    </div>
+
+    <div class="viewall">
+      <a href="./projects/" class="btn hoverable"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </section>
+  <!-- work project section ends -->
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+
+    <h1 class="heading">
+      <i class="fas fa-briefcase"></i> <span>Experience</span>
+    </h1>
+
+
+    <div class="timeline">
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Content Creator</h2>
+          </div>
+          <div class="desc">
+            <h3>explore_with_abinash</h3>
+            <p>June 2019- present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Working</h2>
+          </div>
+          <div class="desc">
+            <h3>Software Developer</h3>
+            <p>present</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>XR Developer Intern</h2>
+          </div>
+          <div class="desc">
+            <h3>Skilledset</h3>
+            <p>March 2025 - May 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>AI & Cloud Internship</h2>
+          </div>
+          <div class="desc">
+            <h3>Edunet Foundation(AICTE)</h3>
+            <p>June 2025 - Aug 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="morebtn">
+        <a href="./experience/" class="btn hoverable"><span>View All</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+    <img src="./assets/faviconabhi-KEuSVHPu.webp" alt="Abinash Bitmoji" class="bitmoji-experience">
+  </section>
+  <!-- experience section ends -->
+  <!-- certification section starts -->
+  <section class="certification" id="certification">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Certifications <span>Earned</span></h2>
+
+    <div class="cert-container">
+
+    </div>
+
+    <div class="viewall">
+      <a href="./certification/" class="btn hoverable"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </section>
+  <!-- certification section ends -->
+  <!-- GitHub Projects Section -->
+  <section id="github" class="github-section">
+    <h2 class="github-title">
+      <i class="fab fa-github"></i>
+      <span class="first">My</span> <span class="second">GitHub</span>
+    </h2>
+
+
+    <div class="github-container">
+
+      <!-- LEFT COLUMN (Profile + Repos) -->
+      <div class="left-column">
+        <!-- Profile Card -->
+        <div id="profile" class="profile-card">
+          <!-- JS will inject profile info -->
+        </div>
+
+        <!-- Repositories -->
+        <div id="repos" class="repo-container">
+          <!-- JS will inject repo cards -->
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN (README) -->
+      <div class="readme-card" id="readme">
+        <!-- JS will inject README.md -->
+      </div>
+
+    </div>
+  </section>
+  <!-- github section end -->
+
+  <!-- nice card Section start check properly  card -->
+  <section class="skills-section">
+    <div class="socard-container">
+
+      <!-- Left Section -->
+      <div class="left-section">
+
+        <!-- GitHub Card -->
+        <a href="https://github.com/abinasharma001" target="_blank" class="github-card">
+          <div class="github-icon">
+            <!-- ✅ Official GitHub Icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61a3.2 3.2 0 0 0-1.34-1.76c-1.09-.75.08-.74.08-.74a2.54 2.54 0 0 1 1.85 1.25 2.58 2.58 0 0 0 3.52 1 2.62 2.62 0 0 1 .77-1.63c-2.66-.3-5.47-1.34-5.47-5.96a4.64 4.64 0 0 1 1.23-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.3 11.3 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.23 3.22c0 4.64-2.81 5.66-5.49 5.96a2.93 2.93 0 0 1 .84 2.28v3.38c0 .32.22.69.82.58A12 12 0 0 0 12 .3z" />
+            </svg>
+          </div>
+          <div class="github-info">
+            <h3>GitHub</h3>
+            <p>Check out my projects & contributions</p>
+          </div>
+          <div class="external-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Social Media Carousel -->
+        <div class="social-carousel">
+          <button class="carousel-nav prev" onclick="prevSlide()">‹</button>
+          <button class="carousel-nav next" onclick="nextSlide()">›</button>
+
+          <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+
+              <!-- ✅ LinkedIn -->
+              <a href="https://www.linkedin.com/in/contactabinashsharma/" target="_blank"
+                class="oksocial-card linkedin">
+                <svg class="oksocial-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M4.98 3.5C3.33 3.5 2 4.84 2 6.48s1.33 2.98 2.98 2.98S8 8.13 8 6.48 6.64 3.5 4.98 3.5zM2.4 21.6h5.17V9H2.4v12.6zM13.6 9h-4.7v12.6h4.7v-7c0-3.7 4.4-4 4.4 0v7h4.7V14c0-6.5-7.1-6.3-9.1-3.1V9z" />
+                </svg>
+                <h3>LinkedIn</h3>
+                <p>Professional Network</p>
+              </a>
+
+              <!-- ✅ Instagram -->
+              <a href="https://instagram.com/abinash_sharma___/" target="_blank" class="oksocial-card instagram">
+                <svg class="oksocial-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.2c3.2 0 3.6 0 4.9.1 1.17.06 1.8.25 2.22.41.55.21.94.47 1.36.89s.68.81.89 1.36c.16.42.35 1.05.41 2.22.11 1.27.11 1.67.11 4.9s0 3.63-.11 4.9c-.06 1.17-.25 1.8-.41 2.22-.21.55-.47.94-.89 1.36-.42.42-.81.68-1.36.89-.42.16-1.05.35-2.22.41-1.27.11-1.67.11-4.9.11s-3.63 0-4.9-.11c-1.17-.06-1.8-.25-2.22-.41-.55-.21-.94-.47-1.36-.89s-.68-.81-.89-1.36c-.16-.42-.35-1.05-.41-2.22C2.2 15.63 2.2 15.23 2.2 12s0-3.63.11-4.9c.06-1.17.25-1.8.41-2.22.21-.55.47-.94.89-1.36S4.46 2.3 5.01 2.09c.42-.16 1.05-.35 2.22-.41C8.5 2.2 8.9 2.2 12 2.2zm0 3.1a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zm0 11a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm5.7-11.7a1.56 1.56 0 1 0 0 3.11 1.56 1.56 0 0 0 0-3.11z" />
+                </svg>
+                <h3>Instagram</h3>
+                <p>Visual Stories</p>
+              </a>
+
+              <!-- ✅ YouTube -->
+              <a href="https://youtube.com/@explore_with_abinash?si=DXWoyISG8YySrKUT" target="_blank"
+                class="oksocial-card youtube">
+                <svg class="oksocial-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.1 3.5 12 3.5 12 3.5s-7.1 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8.5 0 12 0 12s0 3.5.5 5.8a3 3 0 0 0 2.1 2.1c2.3.6 9.4.6 9.4.6s7.1 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.5 24 12 24 12s0-3.5-.5-5.8zM9.7 15.6V8.4L15.8 12l-6.1 3.6z" />
+                </svg>
+                <h3>YouTube</h3>
+                <p>Video Content</p>
+              </a>
+
+              <!-- ✅ X (Twitter) -->
+              <a href="https://twitter.com/Abinash34813061" target="_blank" class="oksocial-card twitter">
+                <svg class="oksocial-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.2 1.8h3.3l-7.2 8.2 8.4 10.5H16l-5.3-6.9-6.1 6.9H1.3l7.6-8.7L1 1.8h6.7l4.8 6.3 5.7-6.3z" />
+                </svg>
+                <h3>Twitter</h3>
+                <p>Quick Updates</p>
+              </a>
+
+              <!-- ✅ Facebook -->
+              <a href="https://www.facebook.com/abhinash.sharma.520900" target="_blank" class="oksocial-card facebook">
+                <svg class="oksocial-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.07 2 .1v2.3h-1.3c-1 0-1.3.5-1.3 1.2V12h2.5l-.4 3h-2v7A10 10 0 0 0 22 12z" />
+                </svg>
+                <h3>Facebook</h3>
+                <p>Social Connection</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Right Section: YouTube Profile Card -->
+      <div class="right-section">
+        <a href="https://youtube.com/@explore_with_abinash?si=DXWoyISG8YySrKUT" target="_blank" class="youtube-card">
+          <img src="./assets/circleabhi-CsDY8YWV.webp" alt="Profile" class="profile-pic">
+
+          <h2>Watch me on YouTube</h2>
+          <p>I talk about webdev & stuff</p>
+
+          <button class="youtube-btn">
+            YouTube Channel
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+            </svg>
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- nice card Section end -->
+
+  <!-- Blog Section -->
+  <section class="blog" id="blog">
+    <h2 class="heading">
+      <i class="fab fa-dev"></i> My <span class="gradient-text">Blogs</span>
+    </h2>
+
+
+    <!-- Search and Filter -->
+    <div class="blog-controls">
+      <input type="text" id="searchInput" placeholder="🔍 Search blog titles..." />
+      <div class="tag-filters" id="tagFilters"></div>
+    </div>
+
+    <!-- Blog Posts Container -->
+    <div class="blog-container" id="blogContainer"></div>
+
+    <!-- Load More Button -->
+    <!-- View More Button -->
+    <div class="view-more">
+      <a href="blogs.html" class="btn hoverable">
+        <span>View More</span> <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+  <!-- blog section end -->
+  <!-- === Bhagavad Gita Section === -->
+  <!-- “Video concept created using my original script. Generated with the help of Google Veo.” -->
+  <section class="gita-section">
+    <div class="gita-overlay"></div>
+
+    <div class="gita-content">
+      <video class="gita-video" autoplay muted loop playsinline>
+        <source src="./assets/krishna-B3ChHryE.mp4" type="video/mp4">
+      </video>
+
+      <div class="gita-text">
+        <div class="sanskrit">
+          कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br />
+          मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
+        </div>
+        <div class="transliteration">
+          Karmanye vadhikaraste, ma phaleshu kadachana.<br />
+          Ma karma phala hetur bhur ma te sango’stvakarmani.
+        </div>
+        <div class="translation">
+          You have a right to perform your duties, but you are not entitled to the fruits of your actions. <br />
+          Do not let the fruits of action be your motive, nor let your attachment be to inaction.
+        </div>
+        <div class="source">— Bhagavad Gita 2.47</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gita section ends -->
+  <!-- creative section start -->
+  <title>Creative Section - The Art Of Balance</title>
+  <link rel="stylesheet" href="style.css" />
+  <section class="creative">
+    <h1>The Art Of Balance — Design, Code, and Creativity</h1>
+    <img src="./assets/hero6-X2y2GLQC.webp" alt="Creative Image">
+  </section>
+  <!-- cretive section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <!-- Include the Lottie library (only once per page) -->
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+          <!-- Two stacked Lottie animations -->
+          <div class="lottie-wrapper">
+            <!-- Top Lottie -->
+            <lottie-player src="assets/images/roboupper.json" background="transparent" speed="1" loop autoplay>
+            </lottie-player>
+
+            <!-- Bottom Lottie -->
+            <lottie-player src="assets/images/robolower.json" background="transparent" speed="1" loop autoplay>
+            </lottie-player>
+          </div>
+        </div>
+
+        <form id="contact-form">
+
+          <div class="form-group">
+            <div class="field hoverable">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field hoverable">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field hoverable">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt hoverable'></i>
+            </div>
+            <div class="message hoverable">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit" class="hoverable">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Abinash's Portfolio</h3>
+        <p>Thank you for visiting my portfolio website. Connect with me over socials. <br /> <br /> Keep Rising 🚀.
+          Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#certification"><i class="fas fa-chevron-circle-right"></i> certification</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+        <h3>Reach Me Out On</h3>
+        <p> <i class="fas fa-envelope"></i>abinasharma001@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Odisha, India-766001</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/contactabinashsharma/" class="fab fa-linkedin hoverable"
+            aria-label="LinkedIn" target="_blank"></a>
+          <a href="https://github.com/abinasharma001" class="fab fa-github hoverable" aria-label="GitHub"
+            target="_blank"></a>
+          <a href="mailto:abinasharma001@gmail.com" class="fas fa-envelope hoverable" aria-label="Mail"
+            target="_blank"></a>
+          <a href="https://t.me/MCAnotesGroupMscbUniversity" class="fab fa-telegram hoverable" aria-label="Telegram"
+            target="_blank"></a>
+          <a href="https://instagram.com/abinash_sharma___?igshid=YTQwZjQ0NmI0OA==" class="fab fa-instagram hoverable"
+            aria-label="Instagram" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/contactabinashsharma/"> Abinash-Sharma</a></h1>
+
+  </section>
+  <!-- footer section ends -->
+
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./js/script.js"></script>
+  <!--github-->
+  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+
+  <!-- Tawk.to Live Chat Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/685bce4bee661a190cce8ac5/1iuj9rmab';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const darkToggle = document.getElementById("darkmode-toggle");
+
+      // Apply dark mode
+      function setDarkMode(enabled) {
+        if (enabled) {
+          document.body.classList.add("dark-mode");
+          localStorage.setItem("dark-mode", "enabled");
+          if (darkToggle) darkToggle.checked = true;
+
+          // ✅ white particles in dark mode
+          updateParticlesColor("#ffffff");
+
+        } else {
+          document.body.classList.remove("dark-mode");
+          localStorage.setItem("dark-mode", "disabled");
+          if (darkToggle) darkToggle.checked = false;
+
+          // ✅ black particles in light mode
+          updateParticlesColor("#000000");
+        }
+      }
+
+      // Load saved preference on page load
+      setDarkMode(localStorage.getItem("dark-mode") === "enabled");
+
+      // Watch for toggle changes
+      if (darkToggle) {
+        darkToggle.addEventListener("change", () => {
+          setDarkMode(darkToggle.checked);
+        });
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const username = "abinasharma001";
+
+      // Updated selectors for new layout
+      const profileContainer = document.querySelector("#profile");
+      const reposContainer = document.querySelector("#repos");
+      const readmeContainer = document.querySelector("#readme");
+
+      // Fetch GitHub Profile
+      const profileRes = await fetch(`https://api.github.com/users/${username}`);
+      const profile = await profileRes.json();
+
+      profileContainer.innerHTML = `
+  <div class="fade-in">
+    <img src="${profile.avatar_url}" alt="${profile.name}" class="avatar" />
+    <h2>${profile.name || profile.login}</h2>
+    <p>${profile.bio || "No bio available"}</p>
+    <p>👥 ${profile.followers} followers • ${profile.following} following</p>
+    <p>📂 ${profile.public_repos} public repos</p>
+    <a href="${profile.html_url}" target="_blank" class="btn">View Profile</a>
+  </div>
+`;
+
+      // Fetch Repositories
+      const reposRes = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+      const repos = await reposRes.json();
+
+      reposContainer.innerHTML = repos
+        .slice(0, 700) // Show 700 repos
+        .map(
+          (repo) => `
+      <div class="repo-card">
+        <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+        <p>${repo.description || "No description"}</p>
+        <p>⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</p>
+      </div>
+    `
+        )
+        .join("");
+
+      // Fetch README
+      const readmeRes = await fetch(`https://raw.githubusercontent.com/${username}/${username}/main/README.md`);
+      const readmeText = await readmeRes.text();
+
+      const converter = new showdown.Converter();
+      const readmeHTML = converter.makeHtml(readmeText);
+
+      readmeContainer.innerHTML = readmeHTML;
+    });
+
+  </script>
+
+  <script>
+    // Add a unique timestamp to prevent caching, so new quote loads each time
+    const quoteImg = document.getElementById("quote-img");
+    quoteImg.src = "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&" + new Date().getTime();
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const video = document.querySelector(".bg-video");
+
+      if (video) {
+        video.playbackRate = 0.6;
+      }
+    });
+  </script>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
+  <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+  <script>
+    const username = "abinasharma001"; // your dev.to username
+    let allBlogs = [];
+    let visibleCount = 6;
+
+    // Load Blogs from Dev.to
+    async function fetchBlogs() {
+      const res = await fetch(`https://dev.to/api/articles?username=${username}&per_page=100`);
+      allBlogs = await res.json();
+      renderTags();
+      renderBlogs();
+    }
+
+    function renderBlogs() {
+      const container = document.getElementById("blogContainer");
+      const searchText = document.getElementById("searchInput").value.toLowerCase();
+      const activeTag = document.querySelector(".tag.active")?.dataset.tag;
+
+      let filtered = allBlogs.filter(blog => {
+        const matchSearch = blog.title.toLowerCase().includes(searchText);
+        const matchTag = activeTag ? blog.tag_list.includes(activeTag) : true;
+        return matchSearch && matchTag;
+      });
+
+      const toShow = filtered.slice(0, visibleCount);
+      container.innerHTML = toShow.map(blog => `
+    <div class="blog-card">
+      <h3>${blog.title}</h3>
+      <p>${blog.description || ""}</p>
+      <a href="${blog.url}" target="_blank">Read More →</a>
+    </div>
+  `).join("");
+
+      document.getElementById("loadMoreBtn").style.display =
+        filtered.length > visibleCount ? "inline-block" : "none";
+    }
+
+    function renderTags() {
+      const tags = [...new Set(allBlogs.flatMap(b => b.tag_list))].slice(0, 8);
+      const tagContainer = document.getElementById("tagFilters");
+      tagContainer.innerHTML = tags.map(tag => `<div class="tag" data-tag="${tag}">#${tag}</div>`).join("");
+
+      tagContainer.querySelectorAll(".tag").forEach(tagEl => {
+        tagEl.addEventListener("click", () => {
+          document.querySelectorAll(".tag").forEach(t => t.classList.remove("active"));
+          tagEl.classList.add("active");
+          renderBlogs();
+        });
+      });
+    }
+
+    document.getElementById("searchInput").addEventListener("input", renderBlogs);
+    document.getElementById("loadMoreBtn").addEventListener("click", () => {
+      visibleCount += 6;
+      renderBlogs();
+    });
+
+    fetchBlogs();
+  </script>
+  <script>
+    async function loadDevToPosts() {
+      const username = "abinasharma001"; // your dev.to username
+      const response = await fetch(`https://dev.to/api/articles?username=${username}&per_page=10`);
+      const posts = await response.json();
+
+      const container = document.getElementById("blogContainer");
+      container.innerHTML = posts.map(post => `
+      <div class="blog-card">
+        <h3>${post.title}</h3>
+        <p>${post.description || ''}</p>
+        <a href="${post.url}" target="_blank">Read More →</a>
+      </div>
+    `).join("");
+    }
+    loadDevToPosts();
+  </script>
+  <!-- === Custom Cursor === -->
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
+
+  <!-- === GSAP and Cursor Script === -->
+  <!-- 
+Custom cursor animation originally by Clement Girault
+Modernized and made adaptive by Abinash (2025)
+Original CodePen: https://codepen.io/clementGir/pen/RQqvQx
+Licensed under the MIT License
+-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    const bigBall = document.querySelector('.cursor__ball--big');
+    const smallBall = document.querySelector('.cursor__ball--small');
+    const hoverables = document.querySelectorAll('.hoverable');
+
+    document.body.addEventListener('mousemove', (e) => {
+      gsap.to(bigBall, { x: e.clientX + window.scrollX, y: e.clientY + window.scrollY, duration: 0.22, ease: "power2.out" });
+      gsap.to(smallBall, { x: e.clientX + window.scrollX, y: e.clientY + window.scrollY, duration: 0.08 });
+    });
+
+    hoverables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        gsap.to(bigBall, { scale: 3.2, duration: 0.28, ease: "power2.out" });
+        gsap.to(bigBall, { opacity: 0.45, duration: 0.28 });
+      });
+      el.addEventListener('mouseleave', () => {
+        gsap.to(bigBall, { scale: 1, opacity: 0.9, duration: 0.28, ease: "power2.out" });
+      });
+    });
+  </script>
+  <script>
+    // Force cursor on top after all DOM loaded
+    window.addEventListener("load", () => {
+      document.querySelector(".cursor").style.zIndex = "999999";
+    });
+  </script>
+  <script>
+    // Ensure music stays paused on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const music = document.getElementById("bgMusic");
+      const btn = document.querySelector('.music-btn');
+
+      music.pause();
+      music.volume = 1;
+
+      if (btn) {
+        btn.classList.remove("active");
+        const icon = btn.querySelector("i");
+        if (icon) {
+          icon.classList.remove("fa-pause");
+          icon.classList.add("fa-play");
+        }
+      }
+    });
+
+    function toggleMusic(btn) {
+      const music = document.getElementById("bgMusic");
+      const icon = btn.querySelector("i");
+
+      if (!music) {
+        console.error("Music element not found!");
+        return;
+      }
+
+      if (music.paused || music.ended) {
+        music.volume = 1;
+
+        // Use promise-based play() with error handling
+        const playPromise = music.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("Music started playing successfully");
+            btn.classList.add("active");
+            icon.classList.remove("fa-play");
+            icon.classList.add("fa-pause");
+          }).catch(error => {
+            console.error("Error playing music:", error);
+            alert("Unable to play music. Please check:\n1. Audio file exists\n2. Browser allows autoplay\n3. File format is supported");
+          });
+        }
+      } else {
+        // Gradually fade out the music before pausing
+        let fade = setInterval(() => {
+          if (music.volume > 0.05) {
+            music.volume -= 0.05;
+          } else {
+            clearInterval(fade);
+            music.pause();
+            music.volume = 1; // reset for next play
+            btn.classList.remove("active");
+            icon.classList.remove("fa-pause");
+            icon.classList.add("fa-play");
+            console.log("Music paused");
+          }
+        }, 50);
+      }
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Detect mobile or tablet screen
+      if (window.innerWidth <= 1024) {
+        // Hide any custom cursor element
+        const customCursor = document.querySelector('.custom-cursor, .cursor, .cursor-dot, .mouse-pointer');
+        if (customCursor) {
+          customCursor.style.display = 'none';
+        }
+
+        // Optionally disable any mousemove event listeners
+        window.addEventListener('mousemove', (e) => {
+          e.stopImmediatePropagation();
+        }, true);
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+      const rocket = document.getElementById("rocket");
+
+      // Wait until Lottie is ready
+      rocket.addEventListener("loaded", () => {
+        // Play only from 3s to 6s segment continuously
+        // Assuming 60fps: 3s = frame 180, 6s = frame 360
+        rocket.playSegments([180, 400], true);
+      });
+
+      // Add fly-away animation after 2 seconds (simulate rocket launch)
+      setTimeout(() => {
+        rocket.style.transition = "transform 1s ease-out, opacity 1s ease-out";
+        rocket.style.transform = "translateY(-300px) scale(0.8)";
+        rocket.style.opacity = "0";
+
+        // Fade out loader background smoothly
+        loader.style.transition = "opacity 1s ease, visibility 1s ease";
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+          loader.style.visibility = "hidden";
+        }, 1000); // match transition duration
+      }, 2000); // time before rocket launches
+    });
+  </script>
+  <script>
+    let currentSlide = 0;
+    const track = document.getElementById('carouselTrack');
+    const totalSlides = 5;
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    // Auto-slide carousel every 5 seconds
+    setInterval(nextSlide, 5000);
+  </script>
+  <script>
+    // Duplicate the tracks for infinite scroll
+    function duplicateTrack(trackId) {
+      const track = document.getElementById(trackId);
+      const items = track.innerHTML;
+      track.innerHTML += items;
+    }
+
+    duplicateTrack('track1');
+    duplicateTrack('track2');
+  </script>
+  <!-- Scroll Progress Bar Script -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('progressBar').style.width = scrolled + '%';
+    });
+  </script>
+  <script>
+    // ========== Lenis Smooth Scroll ==========
+    if (typeof Lenis !== 'undefined') {
+      const lenis = new Lenis({
+        duration: 1.5,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+      });
+
+      // Animation loop
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    } else {
+      console.warn('Lenis library not loaded');
+    }
+  </script>
+  <script>
+    /* Robust Lottie height sync — mobile-friendly */
+    (function robustSyncLottie() {
+      const about = document.querySelector('#about') || document.querySelector('.about');
+      if (!about) { console.warn('No #about found'); return; }
+      const lottie = about.querySelector('lottie-player.bg-lottie') || about.querySelector('lottie-player');
+
+      if (!lottie) { console.warn('No lottie-player found inside #about'); return; }
+
+      function measureHeight() {
+        // multiple measures — take the maximum to avoid undersizing on mobile
+        const rect = about.getBoundingClientRect();
+        const hCandidates = [
+          about.scrollHeight || 0,
+          about.offsetHeight || 0,
+          rect.height || 0,
+          window.innerHeight || 0,
+          document.documentElement.clientHeight || 0
+        ];
+        const h = Math.max(...hCandidates, 300); // safeguard min height
+        return Math.ceil(h);
+      }
+
+      function applyHeight() {
+        const h = measureHeight();
+        // set pixel heights explicitly so mobile browsers honour the size
+        try {
+          lottie.style.position = 'absolute';
+          lottie.style.top = '0';
+          lottie.style.left = '0';
+          lottie.style.width = '100%';
+          lottie.style.height = h + 'px';
+          lottie.style.minHeight = h + 'px';
+          lottie.style.maxHeight = h + 'px';
+          // inner nodes
+          Array.from(lottie.children || []).forEach(c => {
+            try {
+              c.style.width = '100%';
+              c.style.height = h + 'px';
+              c.style.minHeight = h + 'px';
+              c.style.maxHeight = h + 'px';
+            } catch (e) { }
+          });
+        } catch (e) {
+          console.warn('Failed applyHeight', e);
+        }
+      }
+
+      // initial
+      applyHeight();
+
+      // reapply on common events
+      const reapply = () => { applyHeight(); };
+      window.addEventListener('resize', reapply, { passive: true });
+      window.addEventListener('orientationchange', reapply);
+      window.addEventListener('pageshow', reapply);
+      window.addEventListener('load', reapply);
+      window.addEventListener('touchend', reapply, { passive: true }); // catches address-bar hide/show
+
+      // observe DOM changes inside about (images/quotes loading)
+      const mo = new MutationObserver(() => applyHeight());
+      mo.observe(about, { childList: true, subtree: true, attributes: true, characterData: true });
+
+      // retry mechanism: reapply a few times after load (handles late layout shifts)
+      [200, 800, 1600, 3000].forEach(delay => setTimeout(applyHeight, delay));
+
+      // optional safety loop for first 6s (stops itself)
+      let tries = 0;
+      const inten = setInterval(() => {
+        applyHeight();
+        tries++;
+        if (tries > 12) clearInterval(inten);
+      }, 500);
+
+      console.log('robust Lottie height sync enabled');
+    })();
+  </script>
+</body>
+
+</html>

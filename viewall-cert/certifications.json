@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Google IT Support",
+    "desc": "Completed Google IT Support Certification from Coursera.",
+    "image": "google-it",
+    "category": "technical",
+    "link": "https://coursera.org/verify/12345"
+  },
+  {
+    "name": "Python for Everybody",
+    "desc": "Beginner to advanced Python programming specialization.",
+    "image": "python-everybody",
+    "category": "technical",
+    "link": "https://coursera.org/verify/abcd1234"
+  },
+  {
+    "name": "Soft Skills for Engineers",
+    "desc": "Communication, teamwork, and leadership training.",
+    "image": "soft-skills",
+    "category": "softskills",
+    "link": "https://example.com/softskills-certificate"
+  },
+ 
+  {
+    "name": "Time Management Mastery",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "time-mgmt",
+    "category": "softskills",
+    "link": "https://udemy.com/certificate/xyz789"
+  },
+  {
+    "name": "Time Management Mastery",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "time-mgmt",
+    "category": "softskills",
+    "link": "https://udemy.com/certificate/xyz789"
+  },
+  {
+    "name": "Time Management Mastery",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "time-mgmt",
+    "category": "softskills",
+    "link": "https://udemy.com/certificate/xyz789"
+  },
+  {
+    "name": "Time Management Mastery",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "time-mgmt",
+    "category": "softskills",
+    "link": "https://udemy.com/certificate/xyz789"
+  },
+  {
+    "name": "AI for Everyone",
+    "desc": "Basics of AI and real-world applications.",
+    "image": "ai-for-everyone",
+    "category": "others",
+    "link": "https://coursera.org/verify/ai123"
+  }
+]

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link id='favicon' rel="shortcut icon" href="../assets/Tababhi-DhQ-9upT.webp" type="image/x-png">
+  <title>Certifications | Portfolio Abinash </title>
+  <link rel="stylesheet" crossorigin href="../assets/certification--W_u2rKk.css">
+</head>
+
+<body oncontextmenu="return false">
+
+  <!-- navbar starts -->
+  <header>
+    <a href="../" class="logo"><i class="fab fa-atlassian"></i> Abinash</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../#home">Home</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#skills">Skills</a></li>
+        <li><a href="../#education">Education</a></li>
+        <li><a href="../#work">Work</a></li>
+        <li><a href="../#experience">Experience</a></li>
+        <li><a class="active" href="../#certification">Certification</a></li>
+        <li><a href="../#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+
+
+  <!-- certification section starts -->
+  <section class="certification" id="certification">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Certifications <span>Earned</span></h2>
+
+    <!-- filter buttons -->
+    <div id="filters" class="button-group">
+      <button class="btn is-checked" data-filter="*">All Certifications</button>
+      <button class="btn" data-filter=".Technical">Technical</button>
+      <button class="btn" data-filter=".Softskills">Soft Skills</button>
+      <button class="btn" data-filter=".Others">Others</button>
+    </div>
+
+    <!-- certification cards container - EMPTY, will be populated by JavaScript -->
+    <div class="box-container cert-container">
+      <!-- Cards will be loaded here dynamically from certifications.json -->
+    </div>
+
+    <!-- view all button -->
+    <div class="viewall">
+      <button class="btn" id="view-all-cert">
+        View All <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- back button -->
+    <div class="backbtn">
+      <a href="../#certification" class="btn">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Home</span>
+      </a>
+    </div>
+  </section>
+  <!-- certification section ends -->
+  <!-- scroll top btn -->
+  <a href="#certification" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- isotope filter plugin cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+[
+  {
+    "name": "ATM machine Using Python",
+    "desc": "ATM machine Simulation.  Built using python",
+    "image": "notystackandroid",
+    "category": "Python",
+    "links": {
+      "view": "https://www.linkedin.com/posts/contactabinashsharma_octanetservices-atmproject-python-activity-7290065928598261760-26DF?utm_source=share&utm_medium=member_android&rcm=ACoAAD4u2dABr3u38OLxE-nb10uFwOUDZk6oqFw",
+      "code": "https://github.com/abinasharma001/ATM-Machine-Simulator-Using-Python"
+    }
+  },
+  {
+    "name": "Snake Game",
+    "desc": "Classic Snake Game Using Python Language,Graphical Based",
+    "image": "sppuprepandroid",
+    "category": "Python",
+    "links": {
+      "view": "https://www.linkedin.com/posts/contactabinashsharma_python-pygame-gamedevelopment-activity-7208872022188191745-DGWS?utm_source=share&utm_medium=member_android&rcm=ACoAAD4u2dABr3u38OLxE-nb10uFwOUDZk6oqFw",
+      "code": "https://github.com/abinasharma001/Snake-Game-Using-Python"
+    }
+  },
+  {
+    "name": "University Navigation Tracker",
+    "desc": "This is My internship Project using Unity engine.",
+    "image": "templeweb",
+    "category": "Misa",
+    "links": {
+      "view": "https://exploremscb.vercel.app/",
+      "code": "https://github.com/abinasharma001/AR-Navigation-System"
+    }
+  },
+    {
+    "name": "ChatBot",
+    "desc": " Mr.A your AI Gemini Chatbot using flask and python.",
+    "image": "aichat",
+    "category": "Backendai Ongoing",
+    "links": {
+      "view": "https://mr-a-your-ai-chatbot.onrender.com/",
+      "code": "https://github.com/abinasharma001/flask-gemini-chatbot"
+    }
+  },
+  {
+    "name": "Connect Four Game",
+    "desc": "Connect four game using python, if Four color are matched in a row then the player win",
+    "image": "newsboxandroid",
+    "category": "Python",
+    "links": {
+      "view": "https://www.linkedin.com/posts/contactabinashsharma_python-pygame-gamedevelopment-activity-7210951872713560064-oB6N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4u2dABr3u38OLxE-nb10uFwOUDZk6oqFw",
+      "code": "https://github.com/abinasharma001/Connect-Four-Game"
+    }
+  },
+
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "portfolio1",
+    "category": "Ongoing Web",
+    "links": {
+      "view": "https://dev-abinash-sharma.netlify.app/",
+      "code": "https://dev-abinash-sharma.netlify.app/"
+    }
+  },
+  {
+    "name": "User Login System",
+    "desc": "user login system for a Django website.Under development by abns",
+    "image": "bootstraptemplate",
+    "category": "Backendai Python",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+ 
+  {
+    "name": "AI application",
+    "desc": "ABNS:Ai application with python and flask.This project is under development.",
+    "image": "oldsites",
+    "category": "Backendai Python",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+    {
+    "name": "Expense tracker app in Django ",
+    "desc": "ABNS:This project is not yet started.",
+    "image": "burgerweb",
+    "category": "Backendai Python",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Research Agent",
+    "desc": "ABNS: it understands research questions and retrieves relevant information. made Using of IBM cloud lite services and Watsonx.ai .",
+    "image": "kiaweb",
+    "category": "Backendai Ongoing",
+    "links": {
+      "view": "https://github.com/Abinash002coder/Research-Agent-on-IBM-cloud-",
+      "code": "https://github.com/Abinash002coder/Research-Agent-on-IBM-cloud-"
+    }
+  },
+
+
+   {
+    "name": "JavaScript Issue Tracker",
+    "desc": "ABNS:Upcoming project.This project is not yet started.",
+    "image": "issuetrack",
+    "category": "Web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+    {
+    "name": "ResumeGen",
+    "desc": "generate customized resume in few minutes on your requirements.This project is not yet started",
+    "image": "resumegen",
+    "category": "Web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Upcoming Project",
+    "desc": "ABNS:This project is not yet started.",
+    "image": "templeweb",
+    "category": "Web",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]

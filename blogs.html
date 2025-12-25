@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abinash's Dev.to Blogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" crossorigin href="./assets/blogs-lm6uK-f2.css">
+</head>
+<body>
+  <div class="blog-header">
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back</a>
+    <h1><i class="fab fa-dev"></i> My Dev.to <span>Blogs</span></h1>
+  </div>
+
+  <div class="search-glass">
+    <input type="text" id="searchInput" placeholder="🔍 Search blog titles...">
+  </div>
+
+  <div class="tag-container" id="tagContainer"></div>
+
+  <div class="blogs-container" id="blogsContainer"></div>
+
+<script>
+  const username = "abinasharma001";
+  let allBlogs = [];
+
+  async function loadBlogs() {
+    const res = await fetch(`https://dev.to/api/articles?username=${username}&per_page=100`);
+    allBlogs = await res.json();
+    renderTags();
+    renderBlogs();
+  }
+
+  function renderTags() {
+    const tags = [...new Set(allBlogs.flatMap(b => b.tag_list))].slice(0, 12);
+    const container = document.getElementById("tagContainer");
+    container.innerHTML = tags.map(tag => 
+      `<span class="tag" data-tag="${tag}">#${tag}</span>`
+    ).join("");
+    
+    container.querySelectorAll(".tag").forEach(tagEl => {
+      tagEl.addEventListener("click", () => {
+        document.querySelectorAll(".tag").forEach(t => t.classList.remove("active"));
+        tagEl.classList.add("active");
+        renderBlogs();
+      });
+    });
+  }
+
+  function renderBlogs() {
+    const searchText = document.getElementById("searchInput").value.toLowerCase();
+    const activeTag = document.querySelector(".tag.active")?.dataset.tag;
+    
+    const filtered = allBlogs.filter(blog => {
+      const matchesSearch = blog.title.toLowerCase().includes(searchText);
+      const matchesTag = activeTag ? blog.tag_list.includes(activeTag) : true;
+      return matchesSearch && matchesTag;
+    });
+
+    const container = document.getElementById("blogsContainer");
+    container.innerHTML = filtered.map(blog => `
+      <div class="blog-card">
+        <img src="${blog.cover_image || 'https://via.placeholder.com/600x300'}" alt="${blog.title}">
+        <div class="blog-info">
+          <h3>${blog.title}</h3>
+          <p>${blog.description || 'Explore this insightful article about software development and technology.'}</p>
+          <div class="tags">${blog.tag_list.map(tag => `<span>#${tag}</span>`).join(' ')}</div>
+          <a href="${blog.url}" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  document.getElementById("searchInput").addEventListener("input", renderBlogs);
+  loadBlogs();
+</script>
+</body>
+</html>

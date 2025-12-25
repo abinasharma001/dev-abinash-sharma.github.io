@@ -1,0 +1,73 @@
+[
+  {
+    "name": "IBM Technical Support Basic",
+    "desc": "Completed IBM Technical Support Basic Certification from Coursera.",
+    "image": "techsupport",
+    "category": "technical",
+    "link": "https://www.coursera.org/account/accomplishments/verify/GGATP9B8S7KR"
+  },
+  {
+    "name": "Mckinsey.org Forward Learner",
+    "desc": "Communication, teamwork, and leadership training",
+    "image": "mckinsey",
+    "category": "technical",
+    "link": "https://www.credly.com/badges/8204c57f-1adc-4199-b261-df7e41ec78d7/linked_in_profile"
+  },
+  {
+    "name": "Career Essentials in Generative AI by Microsoft and LinkedIn",
+    "desc": "Communication, teamwork, and leadership trainingGenerative AI.",
+    "image": "genai-link",
+    "category": "softskills",
+    "link": "https://www.linkedin.com/learning/certificates/2c1ad9ae66bc28445ba581eea30cccc99d3bc2540b7c977521338b3e721f95ab"
+  },
+ 
+  {
+    "name": "Software Engineering",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "nptel",
+    "category": "softskills",
+    "link": "https://drive.google.com/file/d/1trQkK7WmuwYSVofSjOxLB-KLPnUtktkI/view"
+  },
+  {
+    "name": "Augmented Reality and Arcore",
+    "desc": "Introduction to Augmented Reality and Arcore",
+    "image": "arvrcert",
+    "category": "softskills",
+    "link": "https://www.coursera.org/account/accomplishments/verify/CYQX3I00DGXC"
+  },
+  {
+    "name": "The Guinness World Record Event",
+    "desc": "participating in The Guinness World Record Event -Most users to take an online computer programming lesson in 24 hours",
+    "image": "guvi",
+    "category": "softskills",
+    "link": "https://www.guvi.in/certificate?id=L166s1717y2r59205F"
+  },
+  {
+    "name": "Rocket Propulsion And Spacecraft Dynamics",
+    "desc": "Time and productivity strategies from Udemy.",
+    "image": "kodacy",
+    "category": "softskills",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f "
+  },
+  {
+    "name": "Getting Started with Artificial Intelligence",
+    "desc": "Getting Started with Artificial Intelligence by IBM",
+    "image": "getai",
+    "category": "softskills",
+    "link": "https://drive.google.com/file/d/1iog8bVPO10wktoyrR7tb7pZtL_0K-bko/view"
+  },
+  {
+    "name": "Generative AI By Google",
+    "desc": "Communication, teamwork, and leadership training",
+    "image": "genaigoogle",
+    "category": "technical",
+    "link": "https://www.coursera.org/account/accomplishments/verify/PU8XPG6WKTFN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"
+  },
+  {
+    "name": "Artificial Intelligence Job Simulation",
+    "desc": "Basics of AI and real-world applications.",
+    "image": "cog-ai",
+    "category": "others",
+    "link": "https://drive.google.com/file/d/1L13JDrrskj2VF63ZZIcdx0IGqA_aYJwj/view"
+  }
+]

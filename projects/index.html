@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ Preconnect to CDN for faster resource loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- ✅ Critical CSS loaded first -->
+
+    <!-- ✅ Font Awesome - Async load (non-blocking) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </noscript>
+
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" type="image/png" href="../assets/Tababhi-DhQ-9upT.webp">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Abinash Sharma - Full Stack Developer Portfolio. Python, Django, Flask, JavaScript, AI projects and more.">
+    <meta name="theme-color" content="#000000">
+
+    <title>Projects | Portfolio Abinash Sharma</title>
+  <link rel="stylesheet" crossorigin href="../assets/projects-D7HrWd9Y.css">
+</head>
+
+<body>
+
+    <!-- navbar starts -->
+    <header>
+        <a href="../" class="logo"><i class="fab fa-atlassian"></i> Abinash</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../#home">Home</a></li>
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#skills">Skills</a></li>
+                <li><a href="../#education">Education</a></li>
+                <li><a class="active" href="../#work">Work</a></li>
+                <li><a href="../#experience">Experience</a></li>
+                <li><a href="../#certification">Certification</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- work project section starts -->
+    <section class="work" id="work">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+        <div id="filters" class="button-group">
+            <button class="btn is-checked" data-filter="*">All Projects</button>
+            <button class="btn" data-filter=".Python">Python projects</button>
+            <button class="btn" data-filter=".Web">Web Projects</button>
+            <button class="btn" data-filter=".Backendai">AI and Backend projects</button>
+            <button class="btn" data-filter=".Ongoing">Ongoing Projects</button>
+            <button class="btn" data-filter=".Misa">Miscellaneous Projects</button>
+        </div>
+
+        <div class="box-container">
+            <!-- Projects will be loaded here dynamically -->
+        </div>
+
+        <div class="backbtn">
+            <a href="/#work" class="btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </section>
+    <!-- work project section ends -->
+
+    <!-- scroll top btn -->
+    <a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- ✅ OPTIMIZED: All scripts at the bottom with defer/async -->
+
+    <!-- jQuery - Minified version -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- ❌ REMOVED: Vanilla Tilt (heavy, not essential for performance) -->
+    <!-- ❌ REMOVED: ScrollReveal (causes janky animations on scroll) -->
+
+    <!-- Isotope filter - Only load what we need -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- ✅ imagesLoaded plugin for better layout (lightweight) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"
+        integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Your main script -->
+    <script src="./script.js" defer></script>
+
+    <!-- ✅ Inline polyfill for async CSS loading -->
+    <script>
+        (function () {
+            var links = document.querySelectorAll('link[rel="preload"][as="style"]');
+            links.forEach(function (link) {
+                link.addEventListener('load', function () {
+                    this.rel = 'stylesheet';
+                });
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "IBM Technical Support Basic",
+    "desc": "Completed IBM Technical Support Basic Certification from Coursera.",
+    "image": "techsupport",
+    "category": "technical",
+    "link": "https://www.coursera.org/account/accomplishments/verify/GGATP9B8S7KR"
+  },
+  {
+    "name": "Mckinsey.org Forward Learner",
+    "desc": "Completed professional training in communication, teamwork, and leadership.",
+    "image": "mckinsey",
+    "category": "softskills",
+    "link": "https://www.credly.com/badges/8204c57f-1adc-4199-b261-df7e41ec78d7/linked_in_profile"
+  },
+  {
+    "name": "Career Essentials in Generative AI by Microsoft and LinkedIn",
+    "desc": "Completed training on the fundamentals of Generative AI, covering applications, tools, and best practices.",
+    "image": "genai-link",
+    "category": "technical",
+    "link": "https://www.linkedin.com/learning/certificates/2c1ad9ae66bc28445ba581eea30cccc99d3bc2540b7c977521338b3e721f95ab"
+  },
+  {
+    "name": "Software Engineering",
+    "desc": "Gained knowledge of core software engineering principles including design, development, and project management methodologies.",
+    "image": "nptel",
+    "category": "technical",
+    "link": "https://drive.google.com/file/d/1trQkK7WmuwYSVofSjOxLB-KLPnUtktkI/view"
+  },
+  {
+    "name": "Augmented Reality and ARCore",
+    "desc": "Introduction to Augmented Reality concepts and Google ARCore development tools.",
+    "image": "arvrcert",
+    "category": "technical",
+    "link": "https://www.coursera.org/account/accomplishments/verify/CYQX3I00DGXC"
+  },
+  {
+    "name": "The Guinness World Record Event",
+    "desc": "Participated in the Guinness World Record Event – most users to take an online computer programming lesson in 24 hours.",
+    "image": "guvi",
+    "category": "others",
+    "link": "https://www.guvi.in/certificate?id=L166s1717y2r59205F"
+  },
+  {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  },
+  {
+    "name": "Getting Started with Artificial Intelligence",
+    "desc": "Completed introductory AI training from IBM, covering the basics of artificial intelligence.",
+    "image": "getai",
+    "category": "technical",
+    "link": "https://drive.google.com/file/d/1iog8bVPO10wktoyrR7tb7pZtL_0K-bko/view"
+  },
+  {
+    "name": "Generative AI by Google",
+    "desc": "Completed Generative AI training by Google, including applications and real-world use cases.",
+    "image": "genaigoogle",
+    "category": "technical",
+    "link": "https://www.coursera.org/account/accomplishments/verify/PU8XPG6WKTFN"
+  },
+  {
+    "name": "Artificial Intelligence Job Simulation",
+    "desc": "Hands-on job simulation focused on the basics of AI and real-world applications.",
+    "image": "cog-ai",
+    "category": "others",
+    "link": "https://drive.google.com/file/d/1L13JDrrskj2VF63ZZIcdx0IGqA_aYJwj/view"
+  },
+    {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  },
+    {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  },
+    {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  },
+    {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  },
+    {
+    "name": "Rocket Propulsion and Spacecraft Dynamics",
+    "desc": "Studied the fundamentals of rocket propulsion systems and spacecraft dynamics, focusing on aerospace engineering concepts.",
+    "image": "kodacy",
+    "category": "technical",
+    "link": "https://kodacy.com/kodacy-certificate?cert_hash=41a93eec1c5f461f"
+  }
+]
