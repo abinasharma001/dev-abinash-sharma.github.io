@@ -45,7 +45,13 @@ I enjoy working with modern frontend tools while keeping performance and user ex
 ---
 
 ## Demo
+## 🎬 Portfolio Demo
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dev-abinash-sharma/dev-abinash-sharma.github.io/main/portfoliodemo.gif"
+       alt="Portfolio Demo"
+       width="800" />
+</p>
 
 ---
 
