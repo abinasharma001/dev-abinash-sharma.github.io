@@ -8,9 +8,14 @@
 ![Build](https://img.shields.io/badge/Built%20with-Vite-purple)
 
 🌐 **Live Portfolio**  
-👉 https://dev-abinash-sharma.github.io
+- 👉 https://dev-abinash-sharma.github.io
+- or
+- https://abinash-sharma.pages.dev/
+- 🤖💻 Admin - **Abinash Sharma (@abinasharma001)**
 
----
+- GitHub: https://github.com/abinasharma001
+
+
 
 ## 🧑‍💻 About Me
 
@@ -29,6 +34,8 @@ I enjoy working with modern frontend tools while keeping performance and user ex
 - **Canvas / WebGL** (interactive globe)
 - **JSON-based data rendering**
 - **GitHub Pages** for deployment
+- **Spline**
+- **GSAP**
 
 ---
 
@@ -70,7 +77,13 @@ This repository contains **only the production build** of my portfolio.
 
 ## 📬 Connect With Me
 
-- GitHub: https://github.com/dev-abinash-sharma  
-- Portfolio: https://dev-abinash-sharma.github.io  
+- GitHub: https://github.com/abinasharma001
+  
+- Portfolio: https://dev-abinash-sharma.github.io
+- or
+-  https://abinash-sharma.pages.dev/
+-  Developed By Abinash Sharma
+-  Linkedin- https://www.linkedin.com/in/contactabinashsharma/
+-  Instagram- https://www.instagram.com/abinash_sharma___/
 
 ⭐ If you like my work, feel free to explore the portfolio and connect!
